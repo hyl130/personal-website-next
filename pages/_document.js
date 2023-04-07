@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: 'Next.js Blog Starter Kit',
     description: 'Clone and deploy your own Next.js portfolio in minutes.',
-    image: './favicon.ico'
+    image: 'https://web-dev.imgix.net/image/vS06HQ1YTsbMKSFTIPl2iogUQP73/KAOmqplghJT2PrJlOgZ5.png?auto=format'
   }
 
   return (
