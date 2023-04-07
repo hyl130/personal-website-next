@@ -33,10 +33,7 @@ async function generate() {
   )
 
   allProjects.sort((a, b) => new Date(b.date) - new Date(a.date))
-  allProjects.forEach((project) => {
-      feed.item(project)
-  })
-  await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
+
 }
 
 generate()

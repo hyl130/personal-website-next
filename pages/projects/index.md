@@ -8,7 +8,9 @@ date: 2023-04-05
 
 ## Zesty
 
-This was a web development project. [Check Website](https://lucid-borg-00ad57.netlify.app/)
+Utilized HTML and JavaScript to build out all the features for this web application, then incorporated CSS to style all the page
+components. Used figma to create initial designs. Worked with a recipe API to get recipe datas that match the user’s search criteria.
+[Project Link](https://lucid-borg-00ad57.netlify.app/)
 
 import Image from 'next/image'
 
