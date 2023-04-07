@@ -30,6 +30,8 @@ Developed the landing screen and the order task screens for the mobile app using
 <Image
   src="/images/dormIt1.png"
   alt="DormIt Preview1"
+  width={1328}
+  height={1032}
   priority
   className="next-image"
 />
@@ -37,6 +39,8 @@ Developed the landing screen and the order task screens for the mobile app using
 <Image
   src="/images/dormIt2.png"
   alt="DormIt Preview2"
+  width={1442}
+  height={1012}
   priority
   className="next-image"
 />
