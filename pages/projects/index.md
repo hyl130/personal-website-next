@@ -8,7 +8,7 @@ date: 2023-04-05
 
 ## Zesty
 
-This was a web development project.
+This was a web development project. [Check Website](https://lucid-borg-00ad57.netlify.app/)
 
 import Image from 'next/image'
 
@@ -20,3 +20,10 @@ import Image from 'next/image'
   priority
   className="next-image"
 />
+
+
+## DormIt
+
+Import videos (mp4, webm, mov, ogg, swf, ogv) in Next.js.
+
+<video src={require('./DormItDemo.mov')} />
