@@ -15,7 +15,7 @@ import Image from 'next/image'
 <Image
   src="/images/zestyPreview.png"
   alt="Zesty Preview"
-  width={637.5}
+  width={1500}
   height={850}
   priority
   className="next-image"
