@@ -24,7 +24,20 @@ import Image from 'next/image'
 
 ## DormIt
 
-Import videos (mp4, webm, mov, ogg, swf, ogv) in Next.js.
-<div>
-<video src='./DormItDemo.mov'></video>
-</div>
+<Image
+  src="/images/dormIt1.png"
+  alt="DormIt Preview1"
+  width={1500}
+  height={850}
+  priority
+  className="next-image"
+/>
+
+<Image
+  src="/images/dormIt2.png"
+  alt="DormIt Preview2"
+  width={1500}
+  height={850}
+  priority
+  className="next-image"
+/>
