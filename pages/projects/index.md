@@ -21,7 +21,7 @@ import Image from 'next/image'
   className="next-image"
 />
 
-<hr>
+
 
 ## DormIt
 
