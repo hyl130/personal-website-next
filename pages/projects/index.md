@@ -9,7 +9,7 @@ date: 2023-04-05
 ## Zesty
 
 Utilized HTML and JavaScript to build out all the features for this web application, then incorporated CSS to style all the page
-components. Used figma to create initial designs. Worked with a recipe API to get recipe datas that match the user’s search criteria.
+components. Used figma to create initial designs. Worked with a recipe API to get recipe datas that match the user’s search criteria.<br>
 [Project Link](https://lucid-borg-00ad57.netlify.app/)
 
 import Image from 'next/image'
