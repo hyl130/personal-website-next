@@ -10,20 +10,20 @@ async function generate() {
     feed_url: 'https://hyunjo.vercel.app/feed.xml'
   })
 
-  const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
-  const allPosts = []
+  const projects = await fs.readdir(path.join(__dirname, '..', 'pages', 'projects'))
+  const allProjects = []
   await Promise.all(
-    posts.map(async (name) => {
+    projects.map(async (name) => {
       if (name.startsWith('index.')) return
 
       const content = await fs.readFile(
-        path.join(__dirname, '..', 'pages', 'posts', name)
+        path.join(__dirname, '..', 'pages', 'projects', name)
       )
       const frontmatter = matter(content)
 
-      allPosts.push({
+      allProjects.push({
         title: frontmatter.data.title,
-        url: '/posts/' + name.replace(/\.mdx?/, ''),
+        url: '/projects/' + name.replace(/\.mdx?/, ''),
         date: frontmatter.data.date,
         description: frontmatter.data.description,
         categories: frontmatter.data.tag.split(', '),
@@ -32,8 +32,8 @@ async function generate() {
     })
   )
 
-  allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
-  allPosts.forEach((post) => {
+  allProjects.sort((a, b) => new Date(b.date) - new Date(a.date))
+  allProjects.forEach((post) => {
       feed.item(post)
   })
   await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
